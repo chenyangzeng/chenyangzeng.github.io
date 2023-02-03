@@ -142,26 +142,26 @@ disqus:
     username: 
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: chenyangzeng
-    repo: bolog-reviews
+    owner: mzlogin
+    repo: blog-comments
     oauth:
-        client_id: 4f551c1ed64d9b72ff7d
-        client_secret: e188515a5e1387ee7ae94f87bfd18167a15db389
+        client_id: d2e1cbbd298958076462
+        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # gitalk 配置参考：https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: chenyangzeng
-    repo: bolog-reviews
-    clientID: 4f551c1ed64d9b72ff7d
-    clientSecret: e188515a5e1387ee7ae94f87bfd18167a15db389
+    owner: mzlogin
+    repo: blog-comments
+    clientID: d2e1cbbd298958076462
+    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # utterances 配置参考：https://utteranc.es/
 utterances:
-    repo:chenyangzeng/bolog-reviews
+    repo: mzlogin/blog-comments
 # beaudar 配置参考：https://beaudar.lipk.org/
 beaudar:
-    repo: chenyangzeng/bolog-reviews
+    repo: mzlogin/blog-comments
 # giscus 配置参考：https://giscus.app/zh-CN
 giscus:
-    repo: chenyangzeng/bolog-reviews
+    repo: mzlogin/blog-comments
     repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
     category: Announcements
     category-id: DIC_kwDOBY0E7c4CRtg9
