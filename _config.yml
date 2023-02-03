@@ -2,18 +2,18 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: "https://chenyangzeng.github.io/"
 date_format: "ordinal"
 title: 码志
-subtitle: "公众号：闷骚的程序员"
-description: "马壮的个人博客，公众号：闷骚的程序员"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang, 闷骚的程序员
-timezone: Asia/Shanghai
+subtitle: "不积硅步，无以至千里"
+description: "陈洋的个人博客"
+keywords: 码志, Yang Chen, chenyang, 年轻的程序员
+timezone: Asia/Chongqing
 encoding: "utf-8"
 # 页面左下角显示的年份
-since: 2015
+since: 2023
 # 源码仓库，请替换成自己的
-repository: mzlogin/mzlogin.github.io
+repository: chenyangzeng/chenyangzeng.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
@@ -24,11 +24,11 @@ components:
     # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
     share:
         enabled: false
-        hide-platforms: qq,facebook
+        hide-platforms: qq
     # 不蒜子访问统计
     busuanzi:
         enabled: false
-        start_date: 2020-05-03
+        start_date: 2023-01-30
     # My Popular Repositories
     side_bar_repo:
         enabled: true
@@ -40,7 +40,7 @@ components:
     # 修改图片请替换 assets/images/qrcode.jpg
     qrcode:
         enabled: true
-        image_alt: 闷骚的程序员
+        image_alt: 年轻的程序员
     # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
     wiki:
         view: cate
@@ -57,12 +57,12 @@ highlight_theme: github
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
+author: Yang Chen
 organization: 
 organization_url: 
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: chenyangzeng
+location: Chongqing,China
+email: 2065638207@qq.com
 
 # ---------------- #
 #    Navigation    #
@@ -142,26 +142,26 @@ disqus:
     username: 
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: mzlogin
-    repo: blog-comments
+    owner: chenyangzeng
+    repo: bolog-reviews
     oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+        client_id: 4f551c1ed64d9b72ff7d
+        client_secret: e188515a5e1387ee7ae94f87bfd18167a15db389
 # gitalk 配置参考：https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: mzlogin
-    repo: blog-comments
-    clientID: d2e1cbbd298958076462
-    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+    owner: chenyangzeng
+    repo: bolog-reviews
+    clientID: 4f551c1ed64d9b72ff7d
+    clientSecret: e188515a5e1387ee7ae94f87bfd18167a15db389
 # utterances 配置参考：https://utteranc.es/
 utterances:
-    repo: mzlogin/blog-comments
+    repo:chenyangzeng/bolog-reviews
 # beaudar 配置参考：https://beaudar.lipk.org/
 beaudar:
-    repo: mzlogin/blog-comments
+    repo: chenyangzeng/bolog-reviews
 # giscus 配置参考：https://giscus.app/zh-CN
 giscus:
-    repo: mzlogin/blog-comments
+    repo: chenyangzeng/bolog-reviews
     repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
     category: Announcements
     category-id: DIC_kwDOBY0E7c4CRtg9
@@ -188,3 +188,4 @@ google:
         sidebar-detail: true 
         content_header: false
         content_footer: false
+
