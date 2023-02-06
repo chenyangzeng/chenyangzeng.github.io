@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: "https://chenyangzeng.github.io/"
+url: "https://chenyangzeng.github.io"
 date_format: "ordinal"
 title: 码志
 subtitle: "不积硅步，无以至千里"
@@ -16,37 +16,37 @@ since: 2023
 repository: chenyangzeng/chenyangzeng.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
-    jsdelivr:
-        enabled: false
+  jsdelivr:
+    enabled: false
 # 可选组件配置
 components:
-    # 分享
-    # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
-    share:
-        enabled: false
-        hide-platforms: qq
-    # 不蒜子访问统计
-    busuanzi:
-        enabled: false
-        start_date: 2023-01-30
-    # My Popular Repositories
-    side_bar_repo:
-        enabled: true
-        limit: 5
-    # 文章字数统计
-    word_count:
-        enabled: true
-    # 页面右上角，以及「关于」页面的二维码
-    # 修改图片请替换 assets/images/qrcode.jpg
-    qrcode:
-        enabled: true
-        image_alt: 年轻的程序员
-    # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
-    wiki:
-        view: cate
-    # 图片灯箱效果功能
-    fancybox:
-        enabled: false
+  # 分享
+  # weibo,qq,wechat,douban,qzone,linkedin,facebook,twitter
+  share:
+    enabled: false
+    hide-platforms: qq
+  # 不蒜子访问统计
+  busuanzi:
+    enabled: false
+    start_date: 2023-01-30
+  # My Popular Repositories
+  side_bar_repo:
+    enabled: true
+    limit: 5
+  # 文章字数统计
+  word_count:
+    enabled: true
+  # 页面右上角，以及「关于」页面的二维码
+  # 修改图片请替换 assets/images/qrcode.jpg
+  qrcode:
+    enabled: true
+    image_alt: 年轻的程序员
+  # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
+  wiki:
+    view: cate
+  # 图片灯箱效果功能
+  fancybox:
+    enabled: false
 # 压缩页面内容
 compress_html:
   clippings: all
@@ -58,8 +58,8 @@ highlight_theme: github
 #      Author      #
 # ---------------- #
 author: Yang Chen
-organization: 
-organization_url: 
+organization:
+organization_url:
 github_username: chenyangzeng
 location: Chongqing,China
 email: 2065638207@qq.com
@@ -68,32 +68,27 @@ email: 2065638207@qq.com
 #    Navigation    #
 # ---------------- #
 navs:
-  -
-    href: /
+  - href: /
     label: 首页
 
-  -
-    href: /categories/
+  - href: /categories/
     label: 分类
 
-#   -
-#     href: /archives/
-#     label: 归档
+  #   -
+  #     href: /archives/
+  #     label: 归档
 
-#   -
-#     href: /open-source/
-#     label: 开源
+  #   -
+  #     href: /open-source/
+  #     label: 开源
 
-  -
-    href: /wiki/
+  - href: /wiki/
     label: 维基
 
-  -
-    href: /links/
+  - href: /links/
     label: 链接
 
-  -
-    href: /about/
+  - href: /about/
     label: 关于
 
 # ---------------- #
@@ -106,7 +101,7 @@ subscribe_rss: /feed.xml
 # ---------------- #
 markdown: kramdown
 kramdown:
-    input: GFM
+  input: GFM
 highlighter: rouge
 paginate: 10
 lsi: false
@@ -114,21 +109,21 @@ quiet: false
 excerpt_separator: "\n\n"
 permalink: /:year/:month/:day/:title/
 plugins:
-    - jekyll-github-metadata
-    - rouge
-#     - jekyll-html-pipeline
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
+  - jekyll-github-metadata
+  - rouge
+  #     - jekyll-html-pipeline
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
 #     - jekyll-mentions
 collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
-    fragments:
-        output: true
-        permalink: /fragment/:path/
+  wiki:
+    output: true
+    permalink: /wiki/:path/
+  fragments:
+    output: true
+    permalink: /fragment/:path/
 
 # ---------------- #
 #      Comments    #
@@ -139,53 +134,51 @@ comments_provider: giscus
 # !!!Important!!! Please modify infos below to yours
 # disqus 配置参考：https://disqus.com
 disqus:
-    username: 
+  username:
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: chenyangzeng
-    repo: bolog-reviews
-    oauth:
-        client_id: 4f551c1ed64d9b72ff7d
-        client_secret: e188515a5e1387ee7ae94f87bfd18167a15db389
+  owner: chenyangzeng
+  repo: bolog-reviews
+  oauth:
+    client_id: 4f551c1ed64d9b72ff7d
+    client_secret: e188515a5e1387ee7ae94f87bfd18167a15db389
 # gitalk 配置参考：https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: chenyangzeng
-    repo: bolog-reviews
-    clientID: 4f551c1ed64d9b72ff7d
-    clientSecret: e188515a5e1387ee7ae94f87bfd18167a15db389
+  owner: chenyangzeng
+  repo: bolog-reviews
+  clientID: 4f551c1ed64d9b72ff7d
+  clientSecret: e188515a5e1387ee7ae94f87bfd18167a15db389
 # utterances 配置参考：https://utteranc.es/
-utterances:
-    repo:chenyangzeng/bolog-reviews
+utterances: repo:chenyangzeng/bolog-reviews
 # beaudar 配置参考：https://beaudar.lipk.org/
 beaudar:
-    repo: chenyangzeng/bolog-reviews
+  repo: chenyangzeng/bolog-reviews
 # giscus 配置参考：https://giscus.app/zh-CN
 giscus:
-    repo: chenyangzeng/bolog-reviews
-    repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
-    category: Announcements
-    category-id: DIC_kwDOBY0E7c4CRtg9
+  repo: chenyangzeng/bolog-reviews
+  repo-id: MDEwOlJlcG9zaXRvcnk5MzEyNzkxNw==
+  category: Announcements
+  category-id: DIC_kwDOBY0E7c4CRtg9
 # 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
+lazy_load_disqus: false
 
 # ---------------- #
 #      Search      #
 # ---------------- #
 simple_jekyll_search:
-    # 是否支持全文搜索
-    fulltext: false
-    # 最多显示多少条搜索结果
-    limit: 10
+  # 是否支持全文搜索
+  fulltext: false
+  # 最多显示多少条搜索结果
+  limit: 10
 
 # ---------------- #
 #      Google      #
 # ---------------- #
 google:
-    analytics_id: UA-80669434-1
-    adsense:
-        footer: true
-        sidebar: true 
-        sidebar-detail: true 
-        content_header: false
-        content_footer: false
-
+  analytics_id: UA-80669434-1
+  adsense:
+    footer: true
+    sidebar: true
+    sidebar-detail: true
+    content_header: false
+    content_footer: false
