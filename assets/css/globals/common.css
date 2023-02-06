@@ -40,7 +40,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee
 }
 
 .site-header .account-switcher {
@@ -514,7 +514,7 @@
 
 .markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before {
     letter-spacing: -.2em;
-    content: " "
+    content: " "
 }
 
 .markdown-body code br,.markdown-body tt br {
