@@ -19,7 +19,7 @@
 
 **[在线预览 &rarr;](https://chenyangzeng.github.io/)**
 
-![screenshot home](https://chenyangzeng.github.ioassets/images/screenshots/home.png)
+![screenshot home](https://chenyangzeng.github.io/assets/images/screenshots/home.png)
 
 ## Fork 指南
 
