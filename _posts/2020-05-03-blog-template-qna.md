@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 本博客模板常见问题 Q & A
+title: 本博客模板常见问题 Q & A 泥嚎
 categories: GitHub
 description: 使用这个博客模板的朋友们时不时会提出一些问题，我将它们的解决方案逐渐整理归纳，汇总到这一篇帖子里。
 keywords: Jekyll, GitHub Pages
@@ -24,30 +24,36 @@ jekyll 3.8.5 | Error:  undefined method `map' for false:FalseClass
 Did you mean?  tap
 ```
 
-``undefined method `map` for false:FalseClass`` 这条报错之前总是伴随着 `Failed to open TCP connection to api.github.com:443` 一起出现，是在获取 GitHub Metadata 出错后，导致这一句报错：
+`` undefined method `map` for false:FalseClass `` 这条报错之前总是伴随着 `Failed to open TCP connection to api.github.com:443` 一起出现，是在获取 GitHub Metadata 出错后，导致这一句报错：
 
 {% raw %}
+
 ```liquid
 {% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
 ```
+
 {% endraw %}
 
 解决方法：
 
-模板里主要是 _includes/sidebar-popular-repo.html 和 _pages/open-source.md 两个文件里用到了 Metadata，将以上这一句前的判断条件做一下修改后问题解决，将
+模板里主要是 \_includes/sidebar-popular-repo.html 和 \_pages/open-source.md 两个文件里用到了 Metadata，将以上这一句前的判断条件做一下修改后问题解决，将
 
 {% raw %}
+
 ```liquid
 {% if site.github.public_repositories != null %}
 ```
+
 {% endraw %}
 
 改为
 
 {% raw %}
+
 ```liquid
 {% if site.github.public_repositories != false %}
 ```
+
 {% endraw %}
 
 模板最新代码已经做了修改。
@@ -69,7 +75,7 @@ mathjax: true
 
 ## 如何修改代码高亮风格
 
-可以通过 _config.yml 文件里的配置项 `highlight_theme` 来指定代码高亮风格，支持的风格名称列表参考我维护的另一个项目：
+可以通过 \_config.yml 文件里的配置项 `highlight_theme` 来指定代码高亮风格，支持的风格名称列表参考我维护的另一个项目：
 
 - <https://github.com/mzlogin/rouge-themes>
 
@@ -94,27 +100,27 @@ mathjax: true
 
 页面上提示 `Error: Not Found.`，浏览器控制台可以看到报错信息 `GET https://api.github.com/repos/<用户名>/<repo>/issues?labels=gitment,xxx 404`。
 
-这种情况一般是 _config.yml 的 gitalk.repo 这个配置项填写的不对。这个配置项是要填写一个利用其 Issues 存储评论内容的代码仓库名称，请确保填写的名称对应的代码仓库存在，如果想省事点可以直接填写博客源码对应的仓库名称，比如 `<用户名>.github.io`。
+这种情况一般是 \_config.yml 的 gitalk.repo 这个配置项填写的不对。这个配置项是要填写一个利用其 Issues 存储评论内容的代码仓库名称，请确保填写的名称对应的代码仓库存在，如果想省事点可以直接填写博客源码对应的仓库名称，比如 `<用户名>.github.io`。
 
 ## 修改二维码图片
 
-_config.yml 里的 components.qrcode 这一段用于控制二维码。
+\_config.yml 里的 components.qrcode 这一段用于控制二维码。
 
 不显示二维码：将 components.qrcode.enabled 改为 false。
 
 替换二维码图片：替换 assets/images/qrcode.jpg 文件。
 
-## _data 目录下的 yml 文件内容含义
+## \_data 目录下的 yml 文件内容含义
 
-*skills.yml* 文件里的内容对应[「关于」][1]页面里的 Skill Keywords。
+_skills.yml_ 文件里的内容对应[「关于」][1]页面里的 Skill Keywords。
 
 ![](/images/posts/template/skills.yml.png)
 
-*social.yml* 文件里的内容对应[「关于」][1]页面里的「联系」里的内容。
+_social.yml_ 文件里的内容对应[「关于」][1]页面里的「联系」里的内容。
 
 ![](/images/posts/template/social.yml.png)
 
-*links.yml* 文件里的内容对应[「链接」][2]页面里的内容。
+_links.yml_ 文件里的内容对应[「链接」][2]页面里的内容。
 
 ![](/images/posts/template/links.yml.png)
 
