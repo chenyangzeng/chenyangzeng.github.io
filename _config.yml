@@ -4,10 +4,10 @@
 baseurl:
 url: "https://chenyangzeng.github.io"
 date_format: "ordinal"
-title: 码志
+title: 崽崽
 subtitle: "不积硅步，无以至千里"
 description: "陈洋的个人博客"
-keywords: 码志, Yang Chen, chenyang, 年轻的程序员
+keywords: 崽崽, Yang Chen, chenyang, 年轻的程序员
 timezone: Asia/Chongqing
 encoding: "utf-8"
 # 页面左下角显示的年份
